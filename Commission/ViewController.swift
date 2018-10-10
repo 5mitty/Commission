@@ -25,8 +25,9 @@ class ViewController: UIViewController {
     @IBAction func whenPressedCalculateButton(_ sender: UIButton) {
         
         let commissionPay = getInput()
+        let formattedPayLabel = String(format: %.2f, totalPay)
         let totalPay = commissionPay + Double(basePay)
-        totalPayLabel.text = "Total Pay = $\(totalPay)"
+        totalPayLabel.text = "Total Pay = $\(formattedTotalPay)"
     }
     
     func getInput() -> Double {
