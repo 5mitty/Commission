@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="bul-2R-CQ6">
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bul-2R-CQ6">
                                 <rect key="frame" x="100.00000000000001" y="329" width="175.33333333333334" height="134.33333333333334"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -67,6 +67,7 @@
                     <connections>
                         <outlet property="comissionPayLabel" destination="IGr-g2-dQE" id="Sw8-Nk-Rwu"/>
                         <outlet property="comissionPayTeextField" destination="3cz-mV-cbb" id="ndw-zA-3PW"/>
+                        <outlet property="totalPayLabel" destination="IGr-g2-dQE" id="Mhy-Xz-Auf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var comissionPayLabel: UILabel!
     @IBOutlet weak var comissionPayTeextField: UITextField!
+    @IBOutlet weak var totalPayLabel: UILabel!
     
     let basePay:Int = 500
     
@@ -23,18 +24,17 @@ class ViewController: UIViewController {
 
     @IBAction func whenPressedCalculateButton(_ sender: UIButton) {
         
-        getInput()
+        let commissionPay = getInput()
+        let totalPay = commissionPay + Double(basePay)
+        totalPayLabel.text = "Total Pay = $\(totalPay)"
     }
     
     func getInput() -> Double {
         if let commissionPay = comissionPayTeextField.text, let pay = Double(commissionPay) {
-            
-            print("Has Data and can be turned into double")
+            return pay
         } else {
-            print("No Data or can't be turned into double")
+            return 0
         }
-        return 13.57
     }
-    
 }
 
